@@ -1,0 +1,14 @@
+numpy==1.8.0
+Cython==0.20.1
+python-dateutil==2.2
+pyrepl==0.8.4
+fancycompleter==0.4
+ipython==1.2.1
+wmctrl==0.1
+pytz==2013.9
+MarkupSafe==0.23
+six==1.5.2
+Jinja2==2.7.2
+wsgiref==0.1.2
+Pygments==1.6
+requests==2.8.1
