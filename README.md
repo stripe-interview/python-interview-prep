@@ -6,7 +6,7 @@ First, clone this repository to your computer via the links on the right (creati
 
 When you have `virtualenv` installed, create a new Python environment and activate it by running:
 ```bash
-virtualenv interview_env
+virtualenv interview_env --python=python2.7
 source interview_env/bin/activate
 ```
 
