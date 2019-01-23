@@ -11,4 +11,4 @@ six==1.6.0
 Jinja2==2.7.2
 wsgiref==0.1.2
 Pygments==1.6
-requests==2.8.1
+requests==2.21.0
