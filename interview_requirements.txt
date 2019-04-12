@@ -8,7 +8,7 @@ wmctrl==0.1
 pytz==2013.9
 MarkupSafe==0.23
 six==1.6.0
-Jinja2==2.7.2
+Jinja2==2.10.1
 wsgiref==0.1.2
 Pygments==1.6
 requests==2.21.0
