@@ -1,72 +1,46 @@
-# Interview prep
+# Python Interview Preparation
 
 Thanks for interviewing at Stripe.
-To make sure that we can use our time best in the interview,
-we'd like to have you do some setup in advance.
+To make sure that we can use our time best in the interviews,
+we'd like to have you do some setup on your laptop in advance.
+If you don't have a laptop, let your recruiter know
+and they will supply you with a loaner laptop for your in-person interviews.
 
 First, _clone_ or _download_ this repository to your computer
 via the links on the right
 (creating a fork of the repository is not necessary).
-Next, ensure that you have `virtualenv` installed.
-If you're using Debian or Ubuntu,
-you likely want to run
-`sudo apt-get install python-virtualenv python-dev build-essential`.
-Otherwise, you can find installation instructions for `virtualenv`
-[here](https://virtualenv.pypa.io/en/latest/installation.html),
-and more general help with `pip` and Python package management
-[here](https://docs.python.org/2.7/installing/index.html).
 
-Note, we will be working with *Python 3.5* or later.
+Note, we will be working with **Python 3** (Python 3.5 or later).
+See the [RealPython installation guide], if you haven't installed Python 3 yet.
 
-When you have `virtualenv` installed,
-create a new Python environment and activate it by running:
+We'll create a [virtual environment] with [venv]
+and install some requirements that will be useful in your interviews.
+
+> If for some reason you must use Python 2.7,
+> use [virtualenv] to create the virtual environment.
+
+Create a new Python 3 environment called `interview_env` and _activate_ it
+(Mac or Linux):
 
 ```bash
-virtualenv interview_env --python=python3
-source interview_env/bin/activate
+python3 -m venv ./interview_env
+source ./interview_env/bin/activate
 ```
 
-Next, install some requirements by running:
-`pip install -r interview_requirements.txt`,
-where `interview_requirements.txt` is the path to the accompanying file.
-This may take several minutes.
-If you get a message like "no compiler found",
-you may need to install `gcc` or equivalent
-using your operating system's package manager.
-When you're able to install all of the packages
-in `interview_requirements.txt`,
-you're all done!
-
-## Windows instructions
-
-Install the following software:
-
-* Latest Python 3 - https://www.python.org/downloads/windows/
-* Microsoft Visual C++ Compiler for Python 2.7 - http://aka.ms/vcpython27
-
-open up the Command Prompt and run the following commands:
+On Windows (assuming `cmd.exe`):
 
 ```batch
-pip install virtualenv
-cd path\to\repo
-virtualenv interview_env --python=C:\Python27\python.exe
-interview_env\Scripts\activate.bat
+python -m venv .\interview_env
+.\interview_env\Scripts\activate
+```
+
+Next, install some requirements into the activated virtual environment:
+
+```bash
 pip install -r interview_requirements.txt
 ```
 
-### Troubleshooting
-
-- if you see `'pip' is not recognized as an internal or external command,
-operable program or batch file.`
-when you try to run `pip`, you need to add it to your path.
-Run the following command and then restart your Command Prompt:
-
-```batch
-setx PATH "%PATH%;C:\Python27\Scripts"
-```
-
-- When you first run `pip install`, you may get a pop up to install
-.Net Framework 3.5.
-Go ahead and install that.
-If pip fails in the background while the install is running,
-just rerun `pip install`.
+[RealPython installation guide]: https://realpython.com/installing-python/
+[virtual environment]: https://realpython.com/python-virtual-environments-a-primer/
+[venv]: https://docs.python.org/3/library/venv.html
+[virtualenv]: https://virtualenv.pypa.io/en/latest/installation.html
