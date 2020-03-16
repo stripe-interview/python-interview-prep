@@ -23,23 +23,31 @@ Create a new Python 3 environment called `interview_env` and _activate_ it
 (Mac or Linux):
 
 ```bash
-python3 -m venv ./interview_env
-source ./interview_env/bin/activate
+$ python3 -m venv ./interview_env
+$ source ./interview_env/bin/activate
 ```
 
 On Windows (assuming `cmd.exe`):
 
 ```batch
-python -m venv .\interview_env
-.\interview_env\Scripts\activate
+> python -m venv .\interview_env
+> .\interview_env\Scripts\activate
 ```
 
 Next, install some requirements into the activated virtual environment:
 
 ```bash
-pip install -r interview_requirements.txt
+(interview_env) $ pip install -r interview_requirements.txt
 ```
 
+Finally, in that activated virtual environment, verify that your environment supports TLS 1.2:
+
+```bash
+(interview_env) $ ./verify_tls.py
+TLS 1.2 supported, no action required.
+```
+
+If you see a response that begins with `Error`, follow the instructions it provides.
 [RealPython installation guide]: https://realpython.com/installing-python/
 [virtual environment]: https://realpython.com/python-virtual-environments-a-primer/
 [venv]: https://docs.python.org/3/library/venv.html
