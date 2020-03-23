@@ -48,6 +48,7 @@ TLS 1.2 supported, no action required.
 ```
 
 If you see a response that begins with `Error`, follow the instructions it provides.
+
 [RealPython installation guide]: https://realpython.com/installing-python/
 [virtual environment]: https://realpython.com/python-virtual-environments-a-primer/
 [venv]: https://docs.python.org/3/library/venv.html
