@@ -10,7 +10,7 @@ First, _clone_ or _download_ this repository to your computer
 via the links on the right
 (creating a fork of the repository is not necessary).
 
-Note, we will be working with **Python 3** (Python 3.5 or later).
+Note, we will be working with **Python 3** (Python 3.6 or later).
 See the [RealPython installation guide], if you haven't installed Python 3 yet.
 
 We'll create a [virtual environment] with [venv]
