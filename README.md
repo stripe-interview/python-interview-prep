@@ -43,7 +43,7 @@ Next, install some requirements into the activated virtual environment:
 Finally, in that activated virtual environment, verify that your environment supports TLS 1.2:
 
 ```bash
-(interview_env) $ ./verify_tls.py
+(interview_env) $ python ./verify_tls.py
 TLS 1.2 supported, no action required.
 ```
 
