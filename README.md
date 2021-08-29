@@ -20,11 +20,11 @@ and install some requirements that will be useful in your interviews.
 > use [virtualenv] to create the virtual environment.
 
 Create a new Python 3 environment called `interview_env` and _activate_ it
-(Mac or Linux):
+(`bash` compatible shells on Mac or Linux):
 
 ```bash
 $ python3 -m venv ./interview_env
-$ source ./interview_env/bin/activate
+$ source ./interview_env/bin/activate # or source ./interview_env/bin/activate.fish if you're using fish shell
 ```
 
 On Windows (assuming `cmd.exe`):
