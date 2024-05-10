@@ -32,7 +32,7 @@ For other shells, such as Fish or Csh, see the [venv] documentation.
 On Windows (assuming `cmd.exe`):
 
 ```batch
-> python -m venv .\interview_env
+> python3 -m venv .\interview_env
 > .\interview_env\Scripts\activate
 ```
 
@@ -48,6 +48,8 @@ Finally, in that activated virtual environment, verify that your environment sup
 (interview_env) $ python verify_tls.py
 TLS 1.2 supported; no action required.
 ```
+
+(Use `python verify_tls.py` for Python 2.7.)
 
 If you see a response that begins with `Error`, follow the instructions it provides.
 [MacOS SSL debugging] may be helpful.

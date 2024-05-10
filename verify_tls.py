@@ -1,5 +1,7 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
+
 import requests
+
 
 def main():
     version = requests.get('https://www.howsmyssl.com/a/check').json()['tls_version']
@@ -10,6 +12,7 @@ def main():
                   version=version, url=url))
         exit(1)
     print("TLS 1.2 supported; no action required.")
+
 
 if __name__ == "__main__":
     main()
