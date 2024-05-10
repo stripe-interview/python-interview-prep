@@ -49,8 +49,6 @@ Finally, in that activated virtual environment, verify that your environment sup
 TLS 1.2 supported; no action required.
 ```
 
-(Use `python verify_tls.py` for Python 2.7.)
-
 If you see a response that begins with `Error`, follow the instructions it provides.
 [MacOS SSL debugging] may be helpful.
 
